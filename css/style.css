@@ -98,8 +98,20 @@ main{
 
 .pokemon-todos{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+@media screen and (min-widht: 700px){
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-widht: 470px){
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .pokemon{
@@ -188,6 +200,7 @@ main{
     background-color: var(--clr-gray);
     padding: .25rem .5rem;
     border-radius: 100vmax;
+    
 }
 
 .normal {
